@@ -4,239 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ｆａｎｔｙｃｈ • ＩＤ</title>
-</head>
-<body>
-    <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-      background: linear-gradient(135deg, #1a1a1a 0%, #2d1a1a 50%, #1a1a1a 100%);
-      min-height: 100vh;
-    }
-    
-    /* Container Card Transparan */
-    .glass-container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: rgba(26, 26, 26, 0.85);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      border: 1px solid rgba(139, 30, 40, 0.5);
-      box-shadow: 0 8px 32px rgba(139, 30, 40, 0.3);
-      padding: 30px;
-    }
-    
-    nav {
-      background: linear-gradient(135deg, #8B1E28 0%, #A52A2A 100%);
-      padding: 15px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(139, 30, 40, 0.5);
-    }
-    
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    
-    nav a:hover {
-      color: #ddd;
-    }
-    
-    section {
-      margin-bottom: 50px;
-      padding: 25px;
-      background: rgba(45, 26, 26, 0.6);
-      backdrop-filter: blur(5px);
-      border-radius: 15px;
-      border: 1px solid rgba(139, 30, 40, 0.4);
-      box-shadow: 0 4px 15px rgba(139, 30, 40, 0.2);
-      color: #fff;
-    }
-    
-    img, video {
-      max-width: 100%;
-      height: auto;
-      margin: 10px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-    
-    h2 {
-      color: #fff;
-      border-bottom: 3px solid #8B1E28;
-      padding-bottom: 10px;
-    }
-    
-    h3 {
-      color: #ddd;
-    }
-    
-    ul, ol {
-      margin: 10px 0;
-    }
-    
-    dl dt {
-      font-weight: bold;
-      margin-top: 10px;
-      color: #fff;
-    }
-    
-    dl dd {
-      margin-left: 20px;
-      margin-bottom: 10px;
-    }
-
-    .friend-card {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-      padding: 15px;
-      background: rgba(45, 26, 26, 0.5);
-      border-radius: 10px;
-      gap: 20px;
-      border: 1px solid rgba(139, 30, 40, 0.3);
-    }
-
-    .friend-info {
-      flex: 1;
-    }
-
-    .friend-image {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-      border: 2px solid rgba(139, 30, 40, 0.5);
-    }
-
-    /* Responsive untuk Mobile */
-    @media screen and (max-width: 768px) {
-      body {
-        padding: 10px;
-      }
-
-      .glass-container {
-        padding: 15px;
-      }
-
-      nav {
-        padding: 10px;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 5px 10px;
-        font-size: 14px;
-      }
-
-      section {
-        padding: 15px;
-        margin-bottom: 30px;
-      }
-
-      h2 {
-        font-size: 1.5em;
-      }
-
-      h3 {
-        font-size: 1.2em;
-      }
-
-      .friend-card {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .friend-image {
-        width: 120px;
-        height: 120px;
-        order: -1;
-      }
-
-      .friend-info {
-        text-align: left;
-      }
-
-      img[width="250"], video[width="250"] {
-        width: 100% !important;
-        height: auto !important;
-      }
-
-      #musicBtn {
-        bottom: 10px !important;
-        right: 10px !important;
-        padding: 10px 18px !important;
-        font-size: 12px !important;
-      }
-
-      footer {
-        padding: 15px;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      .glass-container {
-        padding: 10px;
-      }
-
-      nav a {
-        display: block;
-        margin: 5px 0;
-      }
-
-      section {
-        padding: 10px;
-      }
-
-      .friend-image {
-        width: 100px;
-        height: 100px;
-      }
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      padding: 20px;
-      background: linear-gradient(135deg, #8B1E28 0%, #A52A2A 100%);
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(139, 30, 40, 0.5);
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    footer:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(139, 30, 40, 0.7);
-    }
-
-    footer p {
-      margin: 0;
-      color: #fff;
-      font-weight: bold;
-    }
-
-    p, li {
-      color: #ddd;
-    }
-
-    a {
-      color: #A52A2A;
-      transition: color 0.3s;
-    }
-
-    a:hover {
-      color: #8B1E28;
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="glass-container">
@@ -268,8 +36,8 @@
       
       <div class="friend-card">
         <div class="friend-info">
-          <h4 style="margin: 0 0 10px 0; color: #A52A2A;">orang - jabtan</h4>
-          <ul style="margin: 5px 0;">
+          <h4>orang - jabtan</h4>
+          <ul>
             <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis numquam, temporibus porro nesciunt architecto illo quo. Nostrum sint cumque illo voluptatum ducimus suscipit quae impedit nisi iste, ad voluptatem omnis!</li>
           </ul>
         </div>
@@ -278,8 +46,8 @@
 
       <div class="friend-card">
         <div class="friend-info">
-          <h4 style="margin: 0 0 10px 0; color: #A52A2A;">orang - jabatan </h4>
-          <ul style="margin: 5px 0;">
+          <h4>orang - jabatan </h4>
+          <ul>
             <li>lorem</li>
           </ul>
         </div>
@@ -288,8 +56,8 @@
 
       <div class="friend-card">
         <div class="friend-info">
-          <h4 style="margin: 0 0 10px 0; color: #A52A2A;">orang - jabatan </h4>
-          <ul style="margin: 5px 0;">
+          <h4>orang - jabatan </h4>
+          <ul>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum animi nulla nostrum consequatur nesciunt sapiente neque explicabo dicta ad aut voluptates a atque repellat vitae cum quaerat illum officia!</li>
           </ul>
         </div>
